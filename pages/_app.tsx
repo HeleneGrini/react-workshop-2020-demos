@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
         <title>Forms</title>
         <link
           rel="stylesheet"
-          href="https://bootswatch.com/4/lux/bootstrap.min.css"
+          href="https://bootswatch.com/4/minty/bootstrap.min.css"
         ></link>
       </Head>
 
