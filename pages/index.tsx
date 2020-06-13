@@ -1,10 +1,34 @@
+import { useRouter } from "next/router";
+
 const Home = () => {
+  const router = useRouter();
   return (
     <div className="container d-flex flex-column ">
-      <h1>Demo </h1>
       <div className="mt-5">
-        <button type="button" className="btn btn-secondary">
-          Click me
+        <button
+          type="button"
+          className="btn btn-outline-secondary"
+          onClick={() => router.push("/react")}
+        >
+          React demos
+        </button>
+      </div>
+      {/* <div className="mt-5">
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          onClick={() => router.push("/react")}
+        >
+          TypeScript demos
+        </button>
+      </div> */}
+      <div className="mt-5">
+        <button
+          type="button"
+          className="btn btn-outline-info"
+          onClick={() => router.push("/react")}
+        >
+          Forms demos
         </button>
       </div>
     </div>

@@ -1,3 +1,3 @@
 export default (req, res) => {
-  res.send("Hello world");
+  return setTimeout(() => res.send({ message: "Hello world" }), 3000);
 };
