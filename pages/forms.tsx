@@ -9,9 +9,11 @@ export default () => {
 /**
  * 1. form elementer
  * 2. input elements - types
- * 3. controlled vs uncontrolled
  * 5. Radio groups (name)
  * 6. labels (accessibity)
+ * 3. controlled vs uncontrolled (state vs refs)
  * 3. submit form (button vs input type submit)
  * 6. GET / POST, TARGET, action
+ * 7. submission is prevented if pattern is not matched
+ * 8. custom validatons
  */

@@ -137,3 +137,30 @@
 
 // <label for="username">Click me</label>
 // <input type="text" id="username"></input>
+
+// <form
+// onSubmit={(e) => {
+//   e.preventDefault();
+//   console.log("subtmi");
+// }}
+// >
+// <input
+//   // ref={inputRef}
+//   type="text"
+//   name="hello"
+//   pattern="Hello world" // any regex
+//   onChange={(e) => {
+//     // console.log(inputRef.current?.value);
+
+//     if (e.target.validity.patternMismatch) {
+//       console.log("pattern mismatch ");
+//     }
+//     if (e.target.checkValidity()) {
+//       console.log("checkValidity");
+//     } else {
+//       console.log("not valid");
+//     }
+//   }}
+// />
+// <input type="submit" />
+// </form>
