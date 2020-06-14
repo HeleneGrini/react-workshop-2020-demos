@@ -164,3 +164,18 @@
 // />
 // <input type="submit" />
 // </form>
+
+// File
+/** ----------------------------------------- */
+
+// const [files, setFiles] = useState<File[]>([]);
+
+// <form>
+// <input
+//   type="file"
+//   multiple={true}
+//   onChange={(e) => {
+//     setFiles(Array.from(e.target.files));
+//   }}
+// />
+// </form>
