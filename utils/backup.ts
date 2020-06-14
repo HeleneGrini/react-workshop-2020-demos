@@ -99,6 +99,7 @@
 // return {data, loading, error}
 //}
 
+// TYPESCRIPT
 /** ----------------------------------------- */
 
 // interface GenericHook<T extends { [key: string]: string }> {
@@ -126,3 +127,13 @@
 //     const keys = Object.keys(options.initialValue);
 //     return { type: typeof value, value, setValue };
 //   }
+
+// FORMS
+/** ----------------------------------------- */
+
+// <label>Do you like peas?
+//   <input type="checkbox" name="peas">
+// </label>
+
+// <label for="username">Click me</label>
+// <input type="text" id="username"></input>

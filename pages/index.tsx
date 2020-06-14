@@ -26,7 +26,7 @@ const Home = () => {
         <button
           type="button"
           className="btn btn-outline-info"
-          onClick={() => router.push("/react")}
+          onClick={() => router.push("/forms")}
         >
           Forms demos
         </button>
