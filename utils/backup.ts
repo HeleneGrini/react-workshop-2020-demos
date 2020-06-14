@@ -98,3 +98,31 @@
 //   }, []);
 // return {data, loading, error}
 //}
+
+/** ----------------------------------------- */
+
+// interface GenericHook<T extends { [key: string]: string }> {
+//     type: string;
+//     value: T;
+//     /**
+//      * En funksjon som tar inn et objekt av typen T og ikke returnerer noe
+//      */
+//     setValue: (values: T) => void;
+//     /**
+//      * Objekt med samme nøkler som values, men at verdiene er en bool
+//      */
+//     bool?: { [key in keyof T]: boolean };
+//   }
+
+//   enum Keys {
+//     key1 = "key1",
+//     key2 = "key2",
+//   }
+//   function useGenericHook<T extends { [key: string]: string }>(options?: {
+//     initialValue: T;
+//   }): GenericHook<T> {
+//     const [value, setValue] = useState<T>(options?.initialValue);
+//     const values = Object.values(options.initialValue);
+//     const keys = Object.keys(options.initialValue);
+//     return { type: typeof value, value, setValue };
+//   }

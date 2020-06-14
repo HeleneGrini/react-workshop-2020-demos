@@ -13,15 +13,15 @@ const Home = () => {
           React demos
         </button>
       </div>
-      {/* <div className="mt-5">
+      <div className="mt-5">
         <button
           type="button"
           className="btn btn-outline-primary"
-          onClick={() => router.push("/react")}
+          onClick={() => router.push("/typescript")}
         >
           TypeScript demos
         </button>
-      </div> */}
+      </div>
       <div className="mt-5">
         <button
           type="button"
