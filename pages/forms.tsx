@@ -1,8 +1,36 @@
+import { useState } from "react";
 
 export default () => {
+  const [input, setInput] = useState("");
+  const [checked, setChecke] = useState(false);
+  const [touched, setTouched] = useState(false);
+
+  const isValidPhoneNumber = input.length >= 8;
+
   return (
     <div className="container pt-5">
       <h3>Forms</h3>
+      <form
+        method="post"
+        onSubmit={(e) => {
+          e.preventDefault();
+          console.log("submit");
+        }}
+      >
+        <label>
+          Phone number
+          <input
+            type="text"
+            id="phoneNumber"
+            name="phoneNumber"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onBlur={() => setTouched(true)}
+          />
+          {touched && !isValidPhoneNumber ? <div> eerror</div> : null}
+        </label>
+        <button disabled={!isValidPhoneNumber}>submit</button>
+      </form>
     </div>
   );
 };
