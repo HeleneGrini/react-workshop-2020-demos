@@ -4,7 +4,7 @@ type Item = {
   amount: number;
 };
 
-export const SideCart = (props: { items: Array<Item> }) => {
+export const SideCart = (props: { items: Array<Item>; totalItems: number }) => {
   // implement a total count
   return (
     <div className="card ml-auto w-25">
@@ -21,7 +21,9 @@ export const SideCart = (props: { items: Array<Item> }) => {
       </ul>
       <div className="card-body d-flex justify-content-between align-items-center flex-grow-0 ">
         Total:
-        <span className="badge badge-warning badge-pill">?</span>
+        <span className="badge badge-warning badge-pill">
+          {props.totalItems}
+        </span>
       </div>
     </div>
   );
